@@ -30,7 +30,7 @@ class SearchFeature {
     }
 
     pagination(){
-        const itemPerPage = 2
+        const itemPerPage = 1
         const currentPage = Number(this.queryStr.page) || 1;
         const skip = (currentPage-1)*itemPerPage;
  

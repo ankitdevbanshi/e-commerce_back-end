@@ -39,7 +39,7 @@ const productSchema = new mongoose.Schema({
              default : Date.now()
           },
 
-          rating : {
+          ratings : {
             type : Number,
              default: 0
           },
@@ -47,11 +47,12 @@ const productSchema = new mongoose.Schema({
             type : Number,
             default : 0
           },
-          reviews :[ {
-                        name : {
+          reviews :[ { 
+                       userId : String,
+                        userName : {
                          type: String
                         },
-                        rating : {
+                        userRating : {
                             type: Number,
                            
                         },
